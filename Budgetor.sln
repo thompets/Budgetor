@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgetor.Web", "Budgetor.Web\Budgetor.Web.csproj", "{F4B70067-272F-418A-9584-1AAD9CAB2FEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgetor.Classes", "Budgetor.Classes\Budgetor.Classes.csproj", "{DF7CEAB5-8448-446E-A1CD-CF4F16EA54AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgetor.DataModel", "Budgetor.DataModel\Budgetor.DataModel.csproj", "{F911C47A-0C54-4537-BBB1-3A259CCC751F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{F4B70067-272F-418A-9584-1AAD9CAB2FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4B70067-272F-418A-9584-1AAD9CAB2FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4B70067-272F-418A-9584-1AAD9CAB2FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF7CEAB5-8448-446E-A1CD-CF4F16EA54AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7CEAB5-8448-446E-A1CD-CF4F16EA54AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7CEAB5-8448-446E-A1CD-CF4F16EA54AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7CEAB5-8448-446E-A1CD-CF4F16EA54AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F911C47A-0C54-4537-BBB1-3A259CCC751F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F911C47A-0C54-4537-BBB1-3A259CCC751F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F911C47A-0C54-4537-BBB1-3A259CCC751F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F911C47A-0C54-4537-BBB1-3A259CCC751F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
