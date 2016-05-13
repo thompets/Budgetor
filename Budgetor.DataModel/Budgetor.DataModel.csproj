@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +51,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BudgetorContext.cs" />
+    <Compile Include="Migrations\201605130252100_intial migration.cs" />
+    <Compile Include="Migrations\201605130252100_intial migration.Designer.cs">
+      <DependentUpon>201605130252100_intial migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605130316579_Initial seed.cs" />
+    <Compile Include="Migrations\201605130316579_Initial seed.Designer.cs">
+      <DependentUpon>201605130316579_Initial seed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +71,14 @@
       <Project>{DF7CEAB5-8448-446E-A1CD-CF4F16EA54AE}</Project>
       <Name>Budgetor.Classes</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201605130252100_intial migration.resx">
+      <DependentUpon>201605130252100_intial migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605130316579_Initial seed.resx">
+      <DependentUpon>201605130316579_Initial seed.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
