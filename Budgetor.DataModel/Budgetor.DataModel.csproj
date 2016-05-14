@@ -59,6 +59,18 @@
     <Compile Include="Migrations\201605130316579_Initial seed.Designer.cs">
       <DependentUpon>201605130316579_Initial seed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605142319346_reseed-database.cs" />
+    <Compile Include="Migrations\201605142319346_reseed-database.Designer.cs">
+      <DependentUpon>201605142319346_reseed-database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605142324583_add required fields.cs" />
+    <Compile Include="Migrations\201605142324583_add required fields.Designer.cs">
+      <DependentUpon>201605142324583_add required fields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605142340191_deleted fields.cs" />
+    <Compile Include="Migrations\201605142340191_deleted fields.Designer.cs">
+      <DependentUpon>201605142340191_deleted fields.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +90,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605130316579_Initial seed.resx">
       <DependentUpon>201605130316579_Initial seed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605142319346_reseed-database.resx">
+      <DependentUpon>201605142319346_reseed-database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605142324583_add required fields.resx">
+      <DependentUpon>201605142324583_add required fields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605142340191_deleted fields.resx">
+      <DependentUpon>201605142340191_deleted fields.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

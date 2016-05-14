@@ -1,16 +1,13 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
-namespace Budgetor.Classes.Data
+namespace Budgetor.Classes
 {
     public class Bill
     {
         public int Id { get; set; }
+
+        [Required]
         public Biller Biller { get; set; }
-        public DateTime DueDate { get; set; }
-        public double AmountDue { get; set; }
     }
 }

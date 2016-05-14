@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.ComponentModel.DataAnnotations;
 
-namespace Budgetor.Classes.Data
+namespace Budgetor.Classes
 {
     public class Transaction
     {
         public int Id { get; set; }
+
+        [Required]
         public TransactionType TransactionType { get; set; }
-        public double Amount { get; set; }
+
+        public double AmountSpent { get; set; }
         public DateTime Date { get; set; }
     }
 }
