@@ -1,11 +1,7 @@
-﻿using Budgetor.Classes.Data;
-using System;
-using System.Collections.Generic;
+﻿using Budgetor.Classes;
 using System.Data.Entity;
-using System.Linq;
-using System.Web;
 
-namespace Budgetor.DataModel.Data
+namespace Budgetor.DataModel
 {
     public class BudgetorContext : DbContext
     {
@@ -22,5 +18,8 @@ namespace Budgetor.DataModel.Data
         public DbSet<BillerType> BillerTypes { get; set; }
         public DbSet<Deposit> Deposits { get; set; }
         public DbSet<DepositType> DepositTypes { get; set; }
+        public DbSet<Expense> Expenses { get; set; }
+        public DbSet<Expensor> Expensors { get; set; }
+        public DbSet<ExpenseType> ExpenseTypes { get; set; }
     }
 }

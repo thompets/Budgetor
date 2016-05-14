@@ -1,14 +1,13 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Budgetor.Classes
 {
-    public class Biller
+    public class Expensor
     {
         public int Id { get; set; }
 
         [Required]
-        public BillerType BillerType { get; set; }
-
+        public ExpenseType ExpenseType { get; set; }
         public string Name { get; set; }
     }
 }
