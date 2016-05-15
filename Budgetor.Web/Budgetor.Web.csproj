@@ -197,7 +197,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -208,20 +207,58 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\main.js" />
+    <Content Include="App\viewmodels\about.js" />
+    <Content Include="App\viewmodels\shell.js" />
+    <Content Include="App\viewmodels\welcome.js" />
+    <Content Include="App\views\about.html" />
+    <Content Include="App\views\shell.html" />
+    <Content Include="App\views\welcome.html" />
+    <Content Include="Content\app.css" />
+    <Content Include="Content\flashcards.css" />
+    <Content Include="Content\ie10mobile.css" />
+    <Content Include="Content\starterkit.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\durandal.css" />
+    <Content Include="Content\images\icon.png" />
+    <Content Include="Content\images\ios-startup-image-landscape.png" />
+    <Content Include="Content\images\ios-startup-image-portrait.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Scripts\almond-custom.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\durandal\activator.js" />
+    <Content Include="Scripts\durandal\app.js" />
+    <Content Include="Scripts\durandal\binder.js" />
+    <Content Include="Scripts\durandal\composition.js" />
+    <Content Include="Scripts\durandal\events.js" />
+    <Content Include="Scripts\durandal\plugins\dialog.js" />
+    <Content Include="Scripts\durandal\plugins\history.js" />
+    <Content Include="Scripts\durandal\plugins\http.js" />
+    <Content Include="Scripts\durandal\plugins\observable.js" />
+    <Content Include="Scripts\durandal\plugins\router.js" />
+    <Content Include="Scripts\durandal\plugins\serializer.js" />
+    <Content Include="Scripts\durandal\plugins\widget.js" />
+    <Content Include="Scripts\durandal\system.js" />
+    <Content Include="Scripts\durandal\viewEngine.js" />
+    <Content Include="Scripts\durandal\viewLocator.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -229,9 +266,14 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-3.1.0.debug.js" />
+    <Content Include="Scripts\knockout-3.1.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\r.js" />
+    <Content Include="Scripts\require.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\text.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -241,35 +283,15 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\SendCode.cshtml" />
-    <Content Include="Views\Account\VerifyCode.cshtml" />
-    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
-    <Content Include="Views\Manage\ChangePassword.cshtml" />
-    <Content Include="Views\Manage\Index.cshtml" />
-    <Content Include="Views\Manage\ManageLogins.cshtml" />
-    <Content Include="Views\Manage\SetPassword.cshtml" />
-    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\_splash.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\mockData\" />
+    <Folder Include="App\models\" />
+    <Folder Include="App\services\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\durandal\transitions\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
