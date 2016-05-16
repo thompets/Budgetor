@@ -30,7 +30,8 @@ namespace Budgetor.Web
                                 "~/Content/durandal.css",
                                 "~/Content/starterkit.css",
                                 "~/Content/app.css",
-                                "~/Content/flashcards.css"));
+                                "~/Content/flashcards.css",
+                                "~/Content/Site.css"));
 
             bundles.Add(new ScriptBundle("~/Scripts/vendor").Include(
                     "~/Scripts/jquery-{version}.js",
