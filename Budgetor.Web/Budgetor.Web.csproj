@@ -190,6 +190,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\views\admin.html" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -209,11 +210,15 @@
   <ItemGroup>
     <Content Include="App\main.js" />
     <Content Include="App\viewmodels\about.js" />
+    <Content Include="App\viewmodels\admin.js" />
+    <Content Include="App\viewmodels\catalog.js" />
     <Content Include="App\viewmodels\shell.js" />
-    <Content Include="App\viewmodels\welcome.js" />
+    <Content Include="App\viewmodels\transaction.js" />
     <Content Include="App\views\about.html" />
+    <Content Include="App\views\catalog.html" />
+    <Content Include="App\views\navbar.html" />
     <Content Include="App\views\shell.html" />
-    <Content Include="App\views\welcome.html" />
+    <Content Include="App\views\transaction.html" />
     <Content Include="Content\app.css" />
     <Content Include="Content\flashcards.css" />
     <Content Include="Content\ie10mobile.css" />
